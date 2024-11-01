@@ -105,14 +105,16 @@ led_by_pixel = [
     ],
 ]
 
-[_, filename] = sys.argv
+[_, filename] = sys.argv[0:2]
 img = Image.open(filename)
+
+x_shift = 1
+if len(sys.argv) == 3:
+    x_shift = int(sys.argv[2])
 
 frames = []
 frame_count = 1
-x_shift = 0
 if img.width > 9:
-    x_shift = 1
     frame_count = math.ceil(img.width / x_shift)
 
 print(f"Generating {frame_count} frames")
@@ -128,7 +130,7 @@ for f in range(frame_count):
             pix = img.getpixel((x, y))
 
             x_rel = x - x_offset
-            led = led_by_pixel[x_rel][y]
+            led = led_by_pixel[x_rel][8 - y]
 
             if led and not pix:
                 leds.append(led)
