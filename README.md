@@ -19,6 +19,11 @@ Generating 54 frames
 
 Copy the array (starting with `[b'` and ending with `']`) into a variable in [`images.py`](./badge/images.py) and then reference it in [`main.py`](./badge/main.py).
 
+## "Fireworks" Quickstart
+
+1. Copy the contents of [`fireworks`](./fireworks/) to the Pico.
+2. Run it!
+
 ## Code of Conduct
 
 We are committed to fostering an open and welcoming environment. Please read our [code of conduct](CODE_OF_CONDUCT.md) before participating in or contributing to this project.
