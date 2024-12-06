@@ -2,12 +2,12 @@
 
 Demo to play animated images on the Petal Matrix
 
-## Quickstart
+## "Image Animations" Quickstart
 
-1. Copy the contents of [`badge`](./badge/) to the Pico.
+1. Copy the contents of [`image_animations`](./image_animations/) to the Pico.
 2. Run it!
 
-## Building
+### Building
 
 If you want to create your own images, create a 1-bit bitmap that is 9 pixels tall and at least 9 pixels wide, then use the [`convert.py`](./convert.py) script
 
